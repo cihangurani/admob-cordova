@@ -37,8 +37,7 @@
         </config-file>
         
         <source-file src="src/android/libs/admobadplugin.jar" target-dir="libs/"/>
-        <dependency src="com.google.android.gms:play-services-base:+" custom="true" />
-        <dependency src="com.google.android.gms:play-services-ads:+" custom="true" />
+
     </platform>
     
     <platform name="ios">
