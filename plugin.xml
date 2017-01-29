@@ -14,7 +14,7 @@
 	<issue>https://github.com/admob-google/admob-cordova/issues</issue>
 	
     <engines>
-        <engine name="cordova" version=">=3.0" />
+        <engine name="cordova" version=">=3.0.0" />
     </engines>
     
     <js-module src="www/admob.js" name="admob">
@@ -29,6 +29,7 @@
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
+	   <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
             <activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:theme="@android:style/Theme.Translucent" />
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/*">
